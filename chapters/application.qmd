@@ -663,7 +663,7 @@ pouvoir plus facilement automatiser la construction de l'image
 
 Imaginez que vous êtes au restaurant et qu'on ne vous serve pas le plat mais seulement la recette et que, de plus, on vous demande de préparer le plat chez vous avec les ingrédients dans votre frigo. Vous seriez quelque peu déçu. En revanche, si vous avez goûté
 au plat, que vous êtes un réel cordon bleu et qu'on vous donne la recette pour refaire ce plat ultérieurement,
-peut-être que vous appréciriez plus.
+peut-être que vous apprécieriez plus.
 
 Cette analogie illustre l'enjeu de définir le public cible et ses attentes afin de fournir un livrable adapté. Une image `Docker` est un livrable qui n'est pas forcément intéressant pour tous les publics. Certains préféreront avoir un plat bien préparé qu'une recette ; certains apprécieront avoir une image `Docker` mais d'autres ne seront pas en mesure de construire celle-ci ou ne sauront pas la faire fonctionner. Une image `Docker` est plus souvent un moyen pour faciliter la mise en service d'une production qu'une fin en soi.
 
@@ -1045,5 +1045,6 @@ En premier lieu, pour suivre la vie d'un modèle en production (enjeu de l'[obse
 En second lieu, on a encore une chaîne de production où peu de profils non _tech_ peuvent s'insérer. On pourrait vouloir la rendre plus accessible: soit en améliorant notre _output_ site web, soit en mettant en oeuvre des _dashboards_ plus orientés _BI_, pensés pour des profils moins techniques mais ayant une place dans la chaîne de valeur _data_ comme les _data analysts_. Pour cela, il existe des outils sur le `SSPCloud` comme [`Apache Superset`](https://superset.apache.org/).
 
 Gardons aussi à l'esprit que notre chaine dépend de données tabulaires simples avec un objectif assez modeste: mettre à disposition un modèle de classification dans un cadre supervisé. Si on avait un _use case_ différent ou des données plus complexes - par exemple des remontées de données en temps réel ou encore des données textuelles - nous adopterions probablement un _pipeline_ ou des briques technologiques différents à certaines étapes. Néanmoins, la philosophie serait probablement la même : avoir une chaine modulaire, avec les outils technologiques les plus efficaces à chaque maillon, et `Python` et `Kubernetes` pour, dans les ténèbres, les lier.
+
 
 
